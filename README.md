@@ -43,7 +43,8 @@ Trang web giới thiệu công ty BHAD Garment Joint Stock Company - nhà sản 
 ├── index.html          # Trang chủ chính
 ├── styles.css          # File CSS chính với responsive design
 ├── script.js           # File JavaScript với các tính năng tương tác
-├── imgs/               # Thư mục chứa hình ảnh chuyên nghiệp
+├── i18n.js             # Hệ thống đa ngôn ngữ (English/Vietnamese)
+├── *.jpg               # Hình ảnh chuyên nghiệp
 └── README.md          # File hướng dẫn này
 ```
 
@@ -91,7 +92,7 @@ THE NORTH FACE, MANGO, SPYDER, BERSHKA, FASHION NOVA, NATIONAL GEOGRAPHIC, MARC 
 ### 🚀 Triển khai
 1. Tải về toàn bộ file trong thư mục `/workspace`
 2. Upload lên web hosting hoặc mở trực tiếp file `index.html`
-3. Đảm bảo thư mục `imgs/` chứa đầy đủ hình ảnh
+3. Đảm bảo tất cả hình ảnh ở cùng thư mục với index.html
 
 ### 📱 Responsive Testing
 - **Desktop**: Hiển thị đầy đủ layout với grid system
@@ -132,7 +133,7 @@ Chỉnh sửa các CSS variables trong `styles.css`:
 
 ### 📝 Cập nhật nội dung
 - Chỉnh sửa thông tin trong `index.html`
-- Thay thế hình ảnh trong thư mục `imgs/`
+- Thay thế hình ảnh trực tiếp trong thư mục
 - Cập nhật thông tin liên hệ
 
 ### 🔧 Thêm tính năng
