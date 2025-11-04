@@ -1,3 +1,41 @@
+/* Profile Button in Language Switcher */
+.profile-btn {
+    margin-left: 10px;
+    padding: 5px 12px;
+    border: 1px solid #dc3545;
+    background: #dc3545;
+    color: white;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 35px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-btn:hover {
+    background: #c82333;
+    border-color: #c82333;
+    transform: translateY(-1px);
+}
+
+.profile-btn i {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .profile-btn {
+        margin-left: 5px;
+        padding: 4px 8px;
+        font-size: 0.7rem;
+        min-width: 30px;
+    }
+}
+
 /* Reset & Base Styles */
 .capacity-full-width-image img {
     width: 100%;

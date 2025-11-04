@@ -35,6 +35,8 @@ Trang web giới thiệu công ty BHAD Garment Joint Stock Company - nhà sản 
 - **Vanilla JavaScript**: Không sử dụng thư viện ngoài, tối ưu hiệu suất
 - **Font Awesome Icons**: Icon library chuyên nghiệp
 - **Google Fonts**: Font Inter cho typography hiện đại
+- **Multi-language**: Hệ thống đa ngôn ngữ (English/Vietnamese) với localStorage
+- **Company Profile**: PDF Profile viewer với thông tin đầy đủ về công ty
 
 ## Cấu trúc file
 
