@@ -720,7 +720,6 @@ section {
 .collections-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: auto;
     gap: 2rem;
     margin-top: 3rem;
     justify-items: center;
@@ -778,15 +777,56 @@ section {
     font-size: 0.95rem;
 }
 
+.collection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.collection-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.collection-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.collection-card:hover .collection-image img {
+    transform: scale(1.05);
+}
+
+.collection-content {
+    padding: 1.5rem;
+}
+
+.collection-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+}
+
+.collection-content p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
 /* Responsive Design for Collections */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .collections-grid {
         grid-template-columns: repeat(2, 1fr);
-        justify-items: stretch;
+        justify-items: center;
     }
     
     .collection-card {
-        max-width: none;
+        max-width: 320px;
     }
     
     .collection-content {
@@ -812,11 +852,21 @@ section {
 @media (min-width: 1024px) {
     .collections-grid {
         grid-template-columns: repeat(3, 1fr);
-        justify-items: stretch;
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        gap: 2rem;
     }
     
+    .collections-grid .collection-card:nth-child(1) { grid-column: 1; grid-row: 1; }
+    .collections-grid .collection-card:nth-child(2) { grid-column: 2; grid-row: 1; }
+    .collections-grid .collection-card:nth-child(3) { grid-column: 3; grid-row: 1; }
+    .collections-grid .collection-card:nth-child(4) { grid-column: 1; grid-row: 2; }
+    .collections-grid .collection-card:nth-child(5) { grid-column: 2; grid-row: 2; }
+    .collections-grid .collection-card:nth-child(6) { grid-column: 3; grid-row: 2; }
+    
     .collection-card {
-        max-width: none;
+        max-width: 320px;
+        margin: 0;
     }
 }
 
