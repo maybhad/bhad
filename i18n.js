@@ -15,6 +15,7 @@ const translations = {
         nav_certificates: "Certificates",
         nav_contact: "Contact",
         nav_collections: "Collections",
+        nav_profile: "PDF Profile",
         
         // Gallery Section
         nav_gallery: "Gallery",
@@ -333,6 +334,7 @@ const translations = {
         nav_certificates: "Chứng nhận",
         nav_contact: "Liên hệ",
         nav_collections: "Bộ sưu tập",
+        nav_profile: "Tải PDF Profile",
         
         // Gallery Section
         nav_gallery: "Thư viện ảnh",

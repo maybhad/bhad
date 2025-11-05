@@ -1,38 +1,73 @@
 /* Profile Button in Language Switcher */
 .profile-btn {
     margin-left: 10px;
-    padding: 5px 12px;
-    border: 1px solid #dc3545;
-    background: #dc3545;
+    padding: 8px 15px;
+    border: 2px solid #dc3545;
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
     color: white;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-width: 35px;
+    min-width: 120px;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 6px;
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+    position: relative;
+    overflow: hidden;
 }
 
 .profile-btn:hover {
-    background: #c82333;
+    background: linear-gradient(135deg, #c82333 0%, #bd2130 100%);
     border-color: #c82333;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(220, 53, 69, 0.4);
 }
 
 .profile-btn i {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    animation: pulse 2s infinite;
+}
+
+.profile-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 @media (max-width: 768px) {
     .profile-btn {
         margin-left: 5px;
-        padding: 4px 8px;
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        min-width: 100px;
+        gap: 4px;
+    }
+    
+    .profile-text {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-btn {
+        padding: 5px 10px;
+        min-width: 85px;
         font-size: 0.7rem;
-        min-width: 30px;
+    }
+    
+    .profile-text {
+        font-size: 0.7rem;
     }
 }
 
