@@ -149,14 +149,134 @@ const translations = {
         gallery_lines_title: "Production Lines",
         gallery_lines_desc: "10 lines with strict quality control system",
         
-        // Additional Vietnamese translations needed
+        // Additional translations needed
         total_leadership: "Overall Leadership",
         machines_count: "700+ machines",
         bhad_production_lines: "BHAD Production Lines",
         modern_warehouse: "Modern Warehouse",
         total_employees: "Total Employees",
         production_lines_count: "Production Lines",
-        professional_garment_manufacturer: "Professional Garment Manufacturer"
+        professional_garment_manufacturer: "Professional Garment Manufacturer",
+        
+        // Infrastructure
+        infrastructure: "Infrastructure",
+        facility_layout: "Facility Layout",
+        main_factory: "Main Factory",
+        warehouse_1_name: "Warehouse 1",
+        warehouse_2_name: "Warehouse 2",
+        office: "Office",
+        machine_room: "Machine Room",
+        fire_system: "Fire Protection System",
+        high_safety: "High Safety",
+        
+        // Production Management
+        general_director: "General Director",
+        production_dept: "Production Department",
+        line_management: "Line Management",
+        business_dept: "Business Department",
+        market_development: "Market Development",
+        qa_qc_dept: "QA/QC Department",
+        quality_control: "Quality Control",
+        warehouse_management: "Warehouse Management",
+        material_management: "Material Management",
+        
+        // Departments
+        cutting_dept: "Cutting Department",
+        sewing_dept: "Sewing Department",
+        quality_inspection_dept: "Quality Inspection Department",
+        ironing_dept: "Ironing Department",
+        
+        // Equipment Categories
+        industrial_sewing_machines: "Industrial Sewing Machines",
+        cutting_finishing_machines: "Cutting & Finishing Machines",
+        supporting_equipment: "Supporting Equipment",
+        
+        // Machine Types
+        single_needle_machine: "Single Needle Machine",
+        double_needle_machine: "Double Needle Machine",
+        overlock_4_thread: "4-Thread Overlock Machine",
+        overlock_5_thread: "5-Thread Overlock Machine",
+        bartack_machine: "Bartack Machine",
+        button_cutting_machine: "Button Cutting Machine",
+        button_covering_machine: "Button Covering Machine",
+        cnc_cutting_machine: "CNC Cutting Machine",
+        cutting_machine: "Cutting Machine",
+        roll_cutting_machine: "Roll Cutting Machine",
+        fabric_inspection_machine: "Fabric Inspection Machine",
+        industrial_ironing_machine: "Industrial Ironing Machine",
+        steam_ironing_table: "Steam Ironing Table",
+        kansai_machine: "Kansai/Pressed Blanching Machine",
+        large_programming_machine: "Large Programming Machine",
+        small_programming_machine: "Small Programming Machine",
+        button_spraying_machine: "Button Spraying Machine",
+        automatic_button_cover_machine: "Automatic Button Cover/Open Machine",
+        generator: "Generator",
+        electric_forklift: "Electric Forklift",
+        
+        // Country Origins
+        country_origins: "Country Origins",
+        china: "China",
+        japan: "Japan",
+        germany: "Germany",
+        usa: "USA",
+        
+        // Contact Information
+        address: "Address",
+        phone: "Phone",
+        email: "Email",
+        working_hours: "Working Hours",
+        working_schedule: "7:15 AM - 4:30 PM\n(Monday - Friday)",
+        map_location: "Location Map",
+        
+        // Footer
+        information: "Information",
+        about_us_footer: "About Us",
+        capacity_footer: "Capacity",
+        products_footer: "Products",
+        contact_footer: "Contact",
+        copyright: "© 2024 BHAD Garment Joint Stock Company. All rights reserved.",
+        
+        // Team Information
+        employees_per_line: "Employees/Line",
+        office_staff: "Office: 20 people",
+        cutting_staff: "Cutting: 28 people",
+        sewing_staff: "Sewing: 360 people",
+        qa_qc_staff: "QC & QA: 32 people",
+        ironing_staff: "Ironing: 20 people",
+        technical_staff: "Technical: 30 people",
+        packing_staff: "Packing: 20 people",
+        warehouse_staff: "Warehouse: 10 people",
+        other_staff: "Other: 20 people",
+        
+        // Products
+        tshirt_vietnamese: "T-shirts",
+        pants_vietnamese: "Pants",
+        hoodie_fleece: "Hoodies & Fleece",
+        other_fashion_products: "Other Fashion Products",
+        main_clients: "Main Clients",
+        
+        // Certificates Details
+        wrap_gold_cert: "Gold certification for corporate social responsibility",
+        wrap_gold_period: "Valid: 10/05/2024 - 10/05/2025",
+        intertek_wca_cert: "Working condition assessment with 95.88% score",
+        intertek_wca_id: "WCA Assessment #Vie20587-01",
+        sac_higg_cert: "Certification from Sustainable Apparel Coalition",
+        sac_higg_module: "Higg Facility & Social Module",
+        its_grs_cert: "Global Recycled Standard 4.0",
+        its_grs_authority: "Certified by Intertek",
+        
+        // Additional descriptions
+        compliance_room: "Compliance Room",
+        international_certifications: "International Quality Management and Certifications",
+        quality_inspection_professional: "Quality Control - 32 QC/QA professionals strictly inspect",
+        professional_dedicated_accurate: "Professional - Dedicated - Accurate",
+        automatic_storage_system: "Automatic Storage System - 5,500 m²",
+        industrial_jack_machines: "Industrial JACK Machines - 700+ machines",
+        
+        // Alternative labels
+        infrastructure_alt: "Infrastructure",
+        quality_monitoring: "Quality Monitoring",
+        overall_leadership_desc: "Overall Leadership"
     },
     
     vi: {
@@ -306,14 +426,134 @@ const translations = {
         gallery_lines_title: "Dây chuyền sản xuất",
         gallery_lines_desc: "10 dây chuyền với hệ thống kiểm soát chất lượng nghiêm ngặt",
         
-        // Additional Vietnamese translations needed
+        // Additional translations needed
         total_leadership: "Lãnh đạo tổng thể",
         machines_count: "700+ máy móc",
         bhad_production_lines: "Dây chuyền sản xuất BHAD",
         modern_warehouse: "Kho hàng hiện đại",
         total_employees: "Tổng số nhân viên",
         production_lines_count: "Dây chuyền sản xuất",
-        professional_garment_manufacturer: "Nhà sản xuất may mặc chuyên nghiệp"
+        professional_garment_manufacturer: "Nhà sản xuất may mặc chuyên nghiệp",
+        
+        // Infrastructure
+        infrastructure: "Cơ sở hạ tầng",
+        facility_layout: "Bố trí nhà máy",
+        main_factory: "Nhà máy chính",
+        warehouse_1_name: "Kho hàng 1",
+        warehouse_2_name: "Kho hàng 2",
+        office: "Văn phòng",
+        machine_room: "Phòng máy",
+        fire_system: "Hệ thống PCCC",
+        high_safety: "An toàn cao",
+        
+        // Production Management
+        general_director: "Tổng Giám đốc",
+        production_dept: "Phòng Sản xuất",
+        line_management: "Quản lý dây chuyền",
+        business_dept: "Phòng Kinh doanh",
+        market_development: "Phát triển thị trường",
+        qa_qc_dept: "Phòng QA/QC",
+        quality_control: "Kiểm soát chất lượng",
+        warehouse_management: "Kho bãi",
+        material_management: "Quản lý vật tư",
+        
+        // Departments
+        cutting_dept: "Phòng Cắt",
+        sewing_dept: "Phòng May",
+        quality_inspection_dept: "Kiểm tra chất lượng",
+        ironing_dept: "Phòng Ủi",
+        
+        // Equipment Categories
+        industrial_sewing_machines: "Máy may công nghiệp",
+        cutting_finishing_machines: "Máy cắt & hoàn thiện",
+        supporting_equipment: "Thiết bị hỗ trợ",
+        
+        // Machine Types
+        single_needle_machine: "Máy may 1 kim",
+        double_needle_machine: "Máy may 2 kim",
+        overlock_4_thread: "Máy overlock 4 chỉ",
+        overlock_5_thread: "Máy overlock 5 chỉ",
+        bartack_machine: "Máy ghim (Bartack)",
+        button_cutting_machine: "Máy cắt cúc",
+        button_covering_machine: "Máy đệm cúc",
+        cnc_cutting_machine: "Máy CNC cắt",
+        cutting_machine: "Máy cắt",
+        roll_cutting_machine: "Máy cắt cuộn",
+        fabric_inspection_machine: "Máy kiểm tra vải",
+        industrial_ironing_machine: "Máy ủi công nghiệp",
+        steam_ironing_table: "Bàn ủi hơi nước",
+        kansai_machine: "Máy Kansai/Pressed blanching",
+        large_programming_machine: "Máy lập trình lớn",
+        small_programming_machine: "Máy lập trình nhỏ",
+        button_spraying_machine: "Máy xịt cúc",
+        automatic_button_cover_machine: "Máy đệm đóng/mở tự động",
+        generator: "Máy phát điện",
+        electric_forklift: "Forklift điện",
+        
+        // Country Origins
+        country_origins: "Nguồn gốc xuất xứ",
+        china: "Trung Quốc",
+        japan: "Nhật Bản",
+        germany: "Đức",
+        usa: "Mỹ",
+        
+        // Contact Information
+        address: "Địa chỉ",
+        phone: "Điện thoại",
+        email: "Email",
+        working_hours: "Giờ làm việc",
+        working_schedule: "7:15 AM - 4:30 PM\n(Thứ 2 - Thứ 6)",
+        map_location: "Bản đồ vị trí",
+        
+        // Footer
+        information: "Thông tin",
+        about_us_footer: "Về chúng tôi",
+        capacity_footer: "Năng lực",
+        products_footer: "Sản phẩm",
+        contact_footer: "Liên hệ",
+        copyright: "© 2024 BHAD Garment Joint Stock Company. Mọi quyền được bảo lưu.",
+        
+        // Team Information
+        employees_per_line: "Nhân viên/dây chuyền",
+        office_staff: "Văn phòng: 20 người",
+        cutting_staff: "Cắt (Cutting): 28 người",
+        sewing_staff: "May (Sewing): 360 người",
+        qa_qc_staff: "Kiểm tra (QC & QA): 32 người",
+        ironing_staff: "Đồ phải (Iron): 20 người",
+        technical_staff: "Kỹ thuật: 30 người",
+        packing_staff: "Đóng gói (Packing): 20 người",
+        warehouse_staff: "Kho (Warehouse): 10 người",
+        other_staff: "Khác: 20 người",
+        
+        // Products
+        tshirt_vietnamese: "Áo thun (T-shirt)",
+        pants_vietnamese: "Quần (Pants)",
+        hoodie_fleece: "Áo hoodie & Fleece",
+        other_fashion_products: "Sản phẩm thời trang khác",
+        main_clients: "Khách hàng chính",
+        
+        // Certificates Details
+        wrap_gold_cert: "Chứng nhận vàng về trách nhiệm xã hội doanh nghiệp",
+        wrap_gold_period: "Thời hạn: 10/05/2024 - 10/05/2025",
+        intertek_wca_cert: "Đánh giá điều kiện làm việc với điểm số 95.88%",
+        intertek_wca_id: "WCA Assessment #Vie20587-01",
+        sac_higg_cert: "Chứng nhận từ Sustainable Apparel Coalition",
+        sac_higg_module: "Higg Facility & Social Module",
+        its_grs_cert: "Chuẩn Global Recycled Standard 4.0",
+        its_grs_authority: "Chứng nhận bởi Intertek",
+        
+        // Additional descriptions
+        compliance_room: "Phòng Tuân thủ",
+        international_certifications: "Quản lý chất lượng và chứng nhận quốc tế",
+        quality_inspection_professional: "Kiểm soát chất lượng - 32 chuyên viên QC/QA kiểm tra nghiêm ngặt",
+        professional_dedicated_accurate: "Chuyên nghiệp - Tận tâm - Chính xác",
+        automatic_storage_system: "Hệ thống lưu trữ tự động - 5.500 m²",
+        industrial_jack_machines: "Máy may công nghiệp JACK - 700+ máy",
+        
+        // Alternative labels
+        infrastructure_alt: "Cơ sở hạ tầng",
+        quality_monitoring: "Giám sát chất lượng",
+        overall_leadership_desc: "Lãnh đạo tổng thể"
     }
 };
 
