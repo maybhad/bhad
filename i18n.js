@@ -14,6 +14,24 @@ const translations = {
         nav_products: "Products",
         nav_certificates: "Certificates",
         nav_contact: "Contact",
+        nav_collections: "Collections",
+        
+        // Gallery Section
+        nav_gallery: "Gallery",
+        gallery_title: "Gallery",
+        gallery_subtitle: "Discover our modern facilities, production process, and working environment",
+        gallery_entrance_title: "Factory Entrance",
+        gallery_entrance_desc: "Main entrance and company sign",
+        gallery_storage_title: "Warehouse Storage",
+        gallery_storage_desc: "Organized storage system for materials",
+        gallery_qc_title: "Quality Control",
+        gallery_qc_desc: "Skilled workers in quality inspection",
+        gallery_packaging_title: "Packaging Process",
+        gallery_packaging_desc: "Professional packaging and finishing",
+        gallery_finished_title: "Finished Goods",
+        gallery_finished_desc: "Ready-to-ship products warehouse",
+        gallery_inspection_title: "Final Inspection",
+        gallery_inspection_desc: "Final quality check before shipping",
         
         // Hero Section
         hero_subtitle: "Professional Garment Manufacturer - High Quality - Reliable",
@@ -111,6 +129,20 @@ const translations = {
         products_subtitle: "Serving famous global brands with the highest quality",
         product_categories: "Product Categories",
         jacket_category: "Jackets",
+        
+        // Product Collections
+        product_collections_title: "Our Product Collections",
+        product_collections_subtitle: "Discover our comprehensive range of high-quality garments",
+        outerwear_collection_title: "Outerwear Collection",
+        outerwear_collection_desc: "Premium puffer jackets, quilted jackets, and winter coats",
+        casual_wear_collection_title: "Casual Wear Collection", 
+        casual_wear_collection_desc: "Comfortable everyday apparel including hoodies and casual tops",
+        bottoms_collection_title: "Bottoms Collection",
+        bottoms_collection_desc: "Complete range of pants, shorts, skirts, and activewear",
+        knitwear_collection_title: "Knitwear Collection",
+        knitwear_collection_desc: "Soft fleece, hoodies, and knit apparel for all seasons",
+        main_products_title: "Main Product Lines",
+        main_products_desc: "Comprehensive catalog featuring our flagship products and designs",
         
         // Certificates Section
         certificates_title: "Certificates & Awards",
@@ -298,6 +330,24 @@ const translations = {
         nav_products: "Sản phẩm",
         nav_certificates: "Chứng nhận",
         nav_contact: "Liên hệ",
+        nav_collections: "Bộ sưu tập",
+        
+        // Gallery Section
+        nav_gallery: "Thư viện ảnh",
+        gallery_title: "Thư viện ảnh",
+        gallery_subtitle: "Khám phá cơ sở hạ tầng hiện đại, quy trình sản xuất và môi trường làm việc của chúng tôi",
+        gallery_entrance_title: "Lối vào nhà máy",
+        gallery_entrance_desc: "Lối vào chính và biển tượng công ty",
+        gallery_storage_title: "Kho lưu trữ",
+        gallery_storage_desc: "Hệ thống lưu trữ có tổ chức cho nguyên vật liệu",
+        gallery_qc_title: "Kiểm soát chất lượng",
+        gallery_qc_desc: "Công nhân lành nghề trong kiểm tra chất lượng",
+        gallery_packaging_title: "Quy trình đóng gói",
+        gallery_packaging_desc: "Đóng gói và hoàn thiện chuyên nghiệp",
+        gallery_finished_title: "Thành phẩm",
+        gallery_finished_desc: "Kho sản phẩm sẵn sàng xuất khẩu",
+        gallery_inspection_title: "Kiểm tra cuối cùng",
+        gallery_inspection_desc: "Kiểm tra chất lượng cuối cùng trước khi giao hàng",
         
         // Hero Section
         hero_subtitle: "Nhà sản xuất may mặc chuyên nghiệp - Chất lượng cao - Đáng tin cậy",
@@ -395,6 +445,20 @@ const translations = {
         products_subtitle: "Phục vụ các thương hiệu nổi tiếng toàn cầu với chất lượng cao nhất",
         product_categories: "Danh mục sản phẩm",
         jacket_category: "Áo khoác (Jacket)",
+        
+        // Product Collections
+        product_collections_title: "Bộ sưu tập sản phẩm",
+        product_collections_subtitle: "Khám phá dòng sản phẩm đa dạng và chất lượng cao",
+        outerwear_collection_title: "Bộ sưu tập Áo khoác",
+        outerwear_collection_desc: "Áo khoác phao, áo khoác đệm chất lượng cao và áo choàng mùa đông",
+        casual_wear_collection_title: "Bộ sưu tập Trang phục thường ngày",
+        casual_wear_collection_desc: "Trang phục hàng ngày thoải mái bao gồm hoodie và áo thun",
+        bottoms_collection_title: "Bộ sưu tập Đồ mặc dưới",
+        bottoms_collection_desc: "Đầy đủ các loại quần, váy, short và đồ thể thao",
+        knitwear_collection_title: "Bộ sưu tập Đồ len",
+        knitwear_collection_desc: "Fleece mềm mại, hoodie và đồ len cho mọi mùa",
+        main_products_title: "Dòng sản phẩm chính",
+        main_products_desc: "Danh mục đầy đủ sản phẩm chủ lực và thiết kế đặc trưng",
         
         // Certificates Section
         certificates_title: "Chứng nhận & Giải thưởng",

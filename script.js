@@ -609,9 +609,152 @@ function debounce(func, wait) {
     };
 }
 
+// Gallery Lightbox Functionality
+class GalleryLightbox {
+    constructor() {
+        this.galleryItems = document.querySelectorAll('.gallery-item');
+        this.currentIndex = 0;
+        this.lightbox = null;
+        this.init();
+    }
+
+    init() {
+        this.createLightbox();
+        this.bindEvents();
+    }
+
+    createLightbox() {
+        const lightboxHTML = `
+            <div class="lightbox" id="gallery-lightbox">
+                <div class="lightbox-content">
+                    <button class="lightbox-close" id="lightbox-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button class="lightbox-nav lightbox-prev" id="lightbox-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="lightbox-nav lightbox-next" id="lightbox-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <img class="lightbox-image" id="lightbox-image" alt="" />
+                    <div class="lightbox-info">
+                        <h3 id="lightbox-title"></h3>
+                        <p id="lightbox-description"></p>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', lightboxHTML);
+        this.lightbox = document.getElementById('gallery-lightbox');
+    }
+
+    bindEvents() {
+        // Gallery item click events
+        this.galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                this.openLightbox(index);
+            });
+        });
+
+        // Lightbox controls
+        const closeBtn = document.getElementById('lightbox-close');
+        const prevBtn = document.getElementById('lightbox-prev');
+        const nextBtn = document.getElementById('lightbox-next');
+
+        closeBtn.addEventListener('click', () => this.closeLightbox());
+        prevBtn.addEventListener('click', () => this.navigate(-1));
+        nextBtn.addEventListener('click', () => this.navigate(1));
+
+        // Close on background click
+        this.lightbox.addEventListener('click', (e) => {
+            if (e.target === this.lightbox) {
+                this.closeLightbox();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (this.lightbox.classList.contains('active')) {
+                switch(e.key) {
+                    case 'Escape':
+                        this.closeLightbox();
+                        break;
+                    case 'ArrowLeft':
+                        this.navigate(-1);
+                        break;
+                    case 'ArrowRight':
+                        this.navigate(1);
+                        break;
+                }
+            }
+        });
+    }
+
+    openLightbox(index) {
+        this.currentIndex = index;
+        this.updateLightboxContent();
+        this.lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    closeLightbox() {
+        this.lightbox.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    navigate(direction) {
+        this.currentIndex += direction;
+        
+        // Loop around if at boundaries
+        if (this.currentIndex >= this.galleryItems.length) {
+            this.currentIndex = 0;
+        } else if (this.currentIndex < 0) {
+            this.currentIndex = this.galleryItems.length - 1;
+        }
+        
+        this.updateLightboxContent();
+    }
+
+    updateLightboxContent() {
+        const item = this.galleryItems[this.currentIndex];
+        const image = item.querySelector('img');
+        const titleKey = item.getAttribute('data-title');
+        const descKey = item.getAttribute('data-desc');
+        
+        const imageElement = document.getElementById('lightbox-image');
+        const titleElement = document.getElementById('lightbox-title');
+        const descElement = document.getElementById('lightbox-description');
+        
+        // Update image
+        imageElement.src = item.getAttribute('data-image');
+        imageElement.alt = image.alt;
+        
+        // Update text content with i18n support
+        if (window.i18n && window.i18n.translations) {
+            titleElement.textContent = window.i18n.getTranslation(titleKey);
+            descElement.textContent = window.i18n.getTranslation(descKey);
+        } else {
+            titleElement.textContent = item.querySelector('h4').textContent;
+            descElement.textContent = item.querySelector('p').textContent;
+        }
+    }
+}
+
+// Initialize gallery when DOM is ready and i18n is loaded
+function initGallery() {
+    if (document.querySelector('.gallery-item')) {
+        new GalleryLightbox();
+    }
+}
+
+// Initialize gallery after a short delay to ensure i18n is loaded
+setTimeout(initGallery, 100);
+
 // Performance optimization for scroll events
 const debouncedScroll = debounce(() => {
     // Additional scroll-based functionality can be added here
 }, 10);
+
+window.addEventListener('scroll', debouncedScroll);
 
 window.addEventListener('scroll', debouncedScroll);
